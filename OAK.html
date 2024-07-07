@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เว็บบอกรัก</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            color: #ff4d4d;
+            font-size: 30px;
+        }
+
+        h1 {
+            color: #ff4d4d;
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 30px;
+            line-height: 1.6;
+        }
+
+        .colorful-background {
+            background-color: #67b0d1;
+        }
+
+        .love-link {
+            color: #ff4d4d;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .love-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>กดข้างล่าง</h1>
+        <p>กด กด</p>
+        <p>กด ยัง</p>
+        <p>กด เยยยย</p>
+        <a href="another_love_page.html" class="love-link">กดตรงนี้ </a>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('colorChangeButton').addEventListener('click', function() {
+                document.body.classList.toggle('colorful-background');
+            });
+        });
+    </script>
+</body>
+</html>
